@@ -17,24 +17,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 4em;
     color: white;
-    height: 7em;
-    width: 7em;
-    margin: 1em;
+    height: 3em;
+    width: 3em;
+    margin: .25em;
     background-color: black;
     border-radius: 10%;
+    border:2px black solid;
 }
 
-.id-div {
-    margin: 0;
-    font-size: 2em;
-}
-
-#message-box {
-    padding: 10px;
-    text-align:center;
-    font-size:2em;
-    background-color: #333;
-    color: white;
-}

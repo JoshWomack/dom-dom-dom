@@ -28,19 +28,6 @@ addSquareButton.addEventListener("click", function () {
     let squares = document.getElementsByClassName('square');
     newDiv.id = squares.length - 1;
 
-    //create div to hold the ID value inside the square
-    let idDiv = document.createElement('div');
-    
-    // add class to idDiv
-    idDiv.className = 'id-div';
-
-    //set text content of idDiv and append to newDiv (a square)    
-    idDiv.textContent = newDiv.id;
-    newDiv.appendChild(idDiv);
-
-    //set the display value of the div contain the ID to none
-    idDiv.style.display = 'none';
-
     //obtain node list of all 'square' divs
     allSquares = document.querySelectorAll('.square');
 
@@ -56,12 +43,13 @@ addSquareButton.addEventListener("click", function () {
 
 //display the text content of idDiv when hovering
 function showID(e) {
-    e.target.childNodes[0].style.display = 'block';
+    // e.target.childNodes[0].style.display = 'block';
+    e.target.textContent = e.target.id;
 }
 
 //no long display the text content of idDiv when hovering stops
 function unshowID(e) {
-    e.target.childNodes[0].style.display = 'none';
+    e.target.textContent = '';
 }
 
 //change of the color of the 'square' div to a random color
