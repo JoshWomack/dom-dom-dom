@@ -1,0 +1,40 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn-add-sqr {
+    margin: 2em 2em 1em 2em;
+    font-size: 2em;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    height: 7em;
+    width: 7em;
+    margin: 1em;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.id-div {
+    margin: 0;
+    font-size: 2em;
+}
+
+#message-box {
+    padding: 10px;
+    text-align:center;
+    font-size:2em;
+    background-color: #333;
+    color: white;
+}
