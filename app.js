@@ -28,17 +28,11 @@ addSquareButton.addEventListener("click", function () {
     let squares = document.getElementsByClassName('square');
     newDiv.id = squares.length - 1;
 
-    //obtain node list of all 'square' divs
-    allSquares = document.querySelectorAll('.square');
+    newDiv.addEventListener('mouseover', showID);
+    newDiv.addEventListener('mouseout', unshowID);
+    newDiv.addEventListener('click', changeColor);
+    newDiv.addEventListener('dblclick', onDoubleClick);
 
-    //loop over each node and add event listeners
-    allSquares.forEach(function (square) {
-        square.addEventListener('mouseover', showID);
-        square.addEventListener('mouseout', unshowID);
-        square.addEventListener('click', changeColor);
-        square.addEventListener('dblclick', onDoubleClick);
-
-    });  
 });
 
 //display the text content of idDiv when hovering
